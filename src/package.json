@@ -1,0 +1,19 @@
+{
+  "name": "iot-humidity-temp",
+  "version": "1.0.0",
+  "description": "Read humidity and temparature",
+  "main": "app.js",
+  "scripts": {},
+  "keywords": [
+    "iot",
+    "humidity",
+    "temparature",
+    "raspberry",
+    "pi"
+  ],
+  "author": "ppopadiyn",
+  "license": "ISC",
+  "dependencies": {
+    "johnny-five": "^0.10.6"
+  }
+}
