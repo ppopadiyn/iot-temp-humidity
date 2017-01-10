@@ -11,7 +11,7 @@ board.on('ready', function () {
     var thermometer = new five.Thermometer({
         freq: 1000,
         pin: "GPIO5",
-        controller: 'DS18B20'
+        controller: "DHT11_I2C_NANO_BACKPACK"
     });
 
     thermometer.on("data", data => {
