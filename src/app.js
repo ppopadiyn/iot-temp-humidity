@@ -8,12 +8,14 @@ var board = new five.Board({
 board.on('ready', function () {
     console.log('Board ready');
 
-    var temperature = new five.Temperature({
+    var thermometer = new five.Thermometer({
         freq: 1000,
-        pin: "GPIO5"
+        pin: "GPIO5",
+        controller: 'DS18B20'
     });
 
-    temperature.on("data", data => {
+    thermometer.on("data", data => {
         console.log("Data changed");
+        
     });
 });
